@@ -1,6 +1,8 @@
 <template>
 <div class="container">
-  <h1 class="text-center my-3">Shopping Cart</h1>
+  <button type="button" class="btn btn-primary mt-3">
+    Cart <span class="badge badge-light">{{ cart }}</span>
+  </button>  <h1 class="text-center my-3">Shopping Cart</h1>
   <div class="row">
         <div class="col-lg-6 col-md-8 " v-for="product in products" :key="product.productId">
           <Product :product="product"></Product>
@@ -20,7 +22,14 @@ export default {
   },
   data(){
     return{
-      products
+      products,
+      cart:0
+    }
+  },
+  methods:{
+    addToCart(product){
+      console.log(product)
+
     }
   }
 }
