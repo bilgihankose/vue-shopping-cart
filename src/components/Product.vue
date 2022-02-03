@@ -6,7 +6,7 @@
     <p>{{ product.name }}</p>
     <p >{{ product.priceText }}</p>
     <p class="text-muted">{{ product.categories }}</p>
-    <a href="#" class="btn btn-primary">Add To Cart</a>
+    <a href="#" class="btn btn-outline-primary add-to-card">Add To Cart</a>
   </div>
 </div>
 </template>
@@ -27,5 +27,11 @@ export default {
 .product-container{
   display: flex;
   border: 1px solid #eee;
+}
+
+.add-to-card{
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
 }
 </style>
