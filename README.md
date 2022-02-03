@@ -1,5 +1,5 @@
 
-# Bootstrap Startup Landing Page
+# Vuejs Shopping Cart Page
 
 This app created with ```vue cli```
 ## Run Locally
@@ -37,8 +37,7 @@ npm run lint
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-## Tech Stack
+See [Configuration Reference](https://cli.vuejs.org/config/).## Tech Stack
 
 **Client:** Vue
 **CSS Framework** Bootstrap 4
@@ -47,7 +46,9 @@ You can see the project with below link
 
 - https://bilgihankose.github.io/bootstrap-website/
 
+Thanks for [Automatically build and deploy a Vue.js app with GitHub Pages](https://blog.logrocket.com/automatically-build-deploy-vuejs-app-github-pages/).
+
+
 ## 🚀 About Me
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/bilgihankose/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/bilgihankose)
