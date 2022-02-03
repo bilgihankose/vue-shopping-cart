@@ -1,17 +1,11 @@
 <template>
 <div class="container">
+  <h1 class="text-center my-3">Shopping Cart</h1>
   <div class="row">
-    <div class="col-md-7">
-      <div class="row">
-        <div class="col-md-6" v-for="product in products" :key="product.productId">
-          <Product>{{ product}}</Product>
+        <div class="col-lg-6 col-md-8 " v-for="product in products" :key="product.productId">
+          <Product :product="product"></Product>
         </div>
-      </div>
-      <Product/>
-      <Product/>
     </div>
-    <div class="col-md-5"></div>
-  </div>
 </div>
 </template>
 
