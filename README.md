@@ -44,7 +44,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).## Tech Stack
 ## 🔗 Links
 You can see the project with below link
 
-- https://bilgihankose.github.io/bootstrap-website/
+- https://bilgihankose.github.io/vue-shopping-cart/
 
 Thanks for [Automatically build and deploy a Vue.js app with GitHub Pages](https://blog.logrocket.com/automatically-build-deploy-vuejs-app-github-pages/).
 
