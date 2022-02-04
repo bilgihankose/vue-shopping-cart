@@ -1,11 +1,11 @@
 <template>
 <div class="container">
   <button type="button" class="btn btn-primary mt-3">
-    Cart <span class="badge badge-light">{{ cart }}</span>
+    Cart <span class="badge badge-light">{{ cart.length }}</span>
   </button>  <h1 class="text-center my-3">Shopping Cart</h1>
   <div class="row">
         <div class="col-lg-6 col-md-8 " v-for="product in products" :key="product.productId">
-          <Product :product="product"></Product>
+          <Product @add-to-cart="addToCart(product)" :product="product" :isInCart="isInCart(product)"></Product>
         </div>
     </div>
 </div>
@@ -23,13 +23,19 @@ export default {
   data(){
     return{
       products,
-      cart:0
+      cart:[]
     }
   },
   methods:{
     addToCart(product){
-      console.log(product)
-
+        this.cart.push(product)
+    },
+    isInCart(product){
+      const item = this.cart.find(item => item.id === product.id)
+      if(item) {
+        return true
+      }
+      return false
     }
   }
 }

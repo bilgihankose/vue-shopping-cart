@@ -6,7 +6,7 @@
     <p>{{ product.name }}</p>
     <p >{{ product.priceText }}</p>
     <p class="text-muted">{{ product.categories }}</p>
-    <button class="btn btn-outline-primary add-to-card">Add To Cart</button>
+    <button @click="$emit('add-to-cart',product)" class="btn btn-outline-primary add-to-card">Add to cart</button>
   </div>
 </div>
 </template>
@@ -14,7 +14,7 @@
 <script>
 export default {
   name: "Product",
-  props:['product'],
+  props:['product', "isInCart"],
   computed: {
    imageURL(){
      return this.product.imageS
